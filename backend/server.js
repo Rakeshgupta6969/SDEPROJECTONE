@@ -3,6 +3,15 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db.js";
 import userRoutes from "./routes/userRoutes.js";
+import accountRoutes from "./routes/accountRoutes.js";
+import transactionRoutes from "./routes/transactionRoutes.js";
+
+
+
+
+
+
+
 
 dotenv.config();
 const app = express();
@@ -17,6 +26,8 @@ app.get("/", (req, res) => {
 
 
 app.use("/api/users", userRoutes);
+app.use("/api/accounts", accountRoutes);
+app.use("/api/transactions", transactionRoutes);  
 
 
 const PORT = process.env.PORT || 5000;
