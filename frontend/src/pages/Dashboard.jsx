@@ -161,10 +161,10 @@ function Dashboard() {
 
   return (
     <Layout>
-      <div className="space-y-8">
+      <div className="space-y-8 bg-linear-to-r/increasing from-indigo-500 to-teal-400 rounded-md">
         {/* Header */}
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-gray-800 ">
+          <h1 className="text-3xl font-bold text-gray-800 ml-0.5 mr-0.5">
             Welcome to Your Dashboard 
           </h1>
         </div>
@@ -180,7 +180,7 @@ function Dashboard() {
         </div>
 
         {/* ✅ Accounts List */}
-        <div className="bg-white p-6 rounded-xl shadow">
+        <div className=" bg-linear-to-t from-sky-500 to-indigo-500p-6 rounded-xl shadow text-black">
           <h2 className="text-2xl font-semibold mb-4">Your Accounts</h2>
 
           {accounts.length === 0 ? (
