@@ -161,10 +161,10 @@ function Dashboard() {
 
   return (
     <Layout>
-      <div className="space-y-8 bg-linear-to-r/increasing from-indigo-500 to-teal-400 rounded-md">
+      <div className="bg-linear-to-r/srgb from-indigo-500 to-teal-400 w-full">
         {/* Header */}
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-gray-800 ml-0.5 mr-0.5">
+          <h1 className="text-1xl font-bold text-gray-800 ml-2 mr-2">
             Welcome to Your Dashboard 
           </h1>
         </div>
@@ -197,7 +197,7 @@ function Dashboard() {
                     <p className="text-gray-500">
                       {acc.accountType} — {acc.bankName}
                     </p>
-                    <p className="text-blue-600 font-semibold">
+                    <p className="text-black font-semibold">
                       Balance: ₹{acc.balance}
                     </p>
                   </div>
