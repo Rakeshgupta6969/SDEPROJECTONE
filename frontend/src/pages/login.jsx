@@ -19,6 +19,9 @@ function Login() {
   };
 
   return (
+        <div>
+       <div className=" bg-gray-100 pl-4 pr-4 "> 
+        <h1>Personal Finance Management</h1> </div>
     <div style={styles.container}>
       <form onSubmit={handleLogin} style={styles.form}>
         <h2 style={styles.heading}>Login</h2>
@@ -42,6 +45,8 @@ function Login() {
         </p>
       </form>
     </div>
+    </div>
+
   );
 }
 
